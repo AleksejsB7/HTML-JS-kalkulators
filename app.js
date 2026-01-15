@@ -17,5 +17,6 @@ SEK: { EUR: 0.087, GBP: 0.075, USD: 0.095, CHF: 0.093, SEK: 1.00 }
 convertBtn.addEventListener('click', ButtonClicked);
 
 function ButtonClicked(){
-    output.innerText = firstValue.value * baseRates[firstCurrency.value][secondCurrency.value]
+    result = firstValue.value * baseRates[firstCurrency.value][secondCurrency.value]
+    output.innerText = firstValue.value + " "+  firstCurrency.value +  " = " + result + " " + secondCurrency.value;
 }
