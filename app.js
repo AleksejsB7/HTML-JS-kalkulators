@@ -1,5 +1,6 @@
 const firstValue = document.getElementById("firstValue");
-const SecondValue = document.getElementById("currency");
+const fistValueCurrency = document.getElementById("firstCurrency")
+const SecondValue = document.getElementById("secondCurrency");
 const convertBtn = document.getElementById("convert");
 const output = document.getElementById("output");
 
