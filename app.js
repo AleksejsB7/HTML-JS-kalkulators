@@ -1,6 +1,6 @@
 const firstValue = document.getElementById("firstValue");
-const fistValueCurrency = document.getElementById("firstCurrency")
-const SecondValue = document.getElementById("secondCurrency");
+const firstCurrency = document.getElementById("firstCurrency")
+const secondCurrency = document.getElementById("secondCurrency");
 const convertBtn = document.getElementById("convert");
 const output = document.getElementById("output");
 
@@ -17,5 +17,5 @@ SEK: { EUR: 0.087, GBP: 0.075, USD: 0.095, CHF: 0.093, SEK: 1.00 }
 convertBtn.addEventListener('click', ButtonClicked);
 
 function ButtonClicked(){
-    output.innerText = firstValue.value +  baseRates['EUR'][SecondValue.value]
+    output.innerText = firstValue.value * baseRates[firstCurrency.value][secondCurrency.value]
 }
